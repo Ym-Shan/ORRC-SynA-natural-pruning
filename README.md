@@ -35,3 +35,11 @@ CUDA_VISIBLE_DEVICE="0,1,2,3" python -m torch.distributed.launch --nproc_per_nod
 ```
 
 After a file completes its execution (completing the entire training and testing process), a folder named "result_data" will be generated to store the results. Within this folder, there will be .pt files containing the firing rate data for each neuron in every model of the network. You can utilize this data in the evaluation code located in the "evaluation" folder to calculate energy consumption and spike counts.
+
+### Citation
+@article{shan2023or,
+  title={OR Residual Connection Achieving Comparable Accuracy to ADD Residual Connection in Deep Residual Spiking Neural Networks},
+  author={Shan, Yimeng and Qiu, Xuerui and Zhu, Rui-jie and Li, Ruike and Wang, Meng and Qu, Haicheng},
+  journal={arXiv preprint arXiv:2311.06570},
+  year={2023}
+}
